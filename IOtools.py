@@ -5,18 +5,19 @@ def get_filenames_smap(basedirin,years_of_interest,ext,sw_years):
     import os.path
     
     # Define the base input directory.
-    #basedirin = "/Users/ceb1c13/Dropbox/Data/2019-08-01-SMAP/" # main directory, remember the slash on the end of the pathname
+    # main directory, remember the slash on the end of the pathname
+    #basedirin = "/Users/ceb1c13/Dropbox/Data/2019-08-01-SMAP/"
     
     # Define the prefix, suffix, resolution and extension.
-    # The total filename will be ... fname = prefx + resolution + yyyy_ddd + suffx + ext
+    # The total filename will be ... fname = prefx + yyyy_ddd + suffx + ext
+    # like ... RSS_smap_SSS_L3_8day_running_2019_365_FNL_v04.0.nc
     prefx = "RSS_smap_SSS_L3_8day_running"
-    suffx = "_FNL_v03.0"
-    resolution = "_40km_"
+    suffx = "_FNL_v04.0"
     #ext = ".nc"
     
     nele = len(years_of_interest)
     if nele < 1: # if empty
-        years_of_interest = np.array([2010,2011,2012,2013,2014,2015,2016,2017,2018,2019])
+        years_of_interest = np.array([2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022])
     
     nyear_of_interest = len(years_of_interest)
     
@@ -57,7 +58,7 @@ def get_filenames_smap(basedirin,years_of_interest,ext,sw_years):
                 pname = basedirin
     
             # Sometimes no subdirectory.
-            fname = prefx + resolution + yyyy_ddd + suffx + ext
+            fname = prefx + yyyy_ddd + suffx + ext
     
             infile = pname+fname
             #print(infile)

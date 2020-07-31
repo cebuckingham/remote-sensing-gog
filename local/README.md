@@ -2,6 +2,8 @@
 
 Remote sensing in the Gulf of Guinea project
 
+This code assumes the user is running the code "local"ly (on his/her personal computer).
+
 This folder contains the relevant Python code (.ipynb files) and example data (.nc files)
 for the "Remote sensing in the Gulf of Guinea" project.
 

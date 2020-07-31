@@ -7,7 +7,7 @@ for the "Remote sensing in the Gulf of Guinea" project.
 
 This folder contains two choices:
 1. local -- Notebooks assuming the student is running the code locally
-2. GoogleColab -- Notebooks assuming the student is running the code on Google Colab Notebooks.
+2. remote -- Notebooks assuming the student is running the code on Google Colab Notebooks.
 
 The data come from Remote Sensing Systems (remss.com) and consist of sea surface salinity.
 If time permits, the students will explore use of sea surface temperature, as well,

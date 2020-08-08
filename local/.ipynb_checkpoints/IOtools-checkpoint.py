@@ -1,4 +1,4 @@
-def get_filenames_smap(basedirin,years_of_interest,ext,sw_years):
+def get_filenames_smap_v4(basedirin,years_of_interest,ext,sw_years):
     
     import numpy as np
     import datetime as dt

@@ -76,4 +76,4 @@ def get_filenames_smap(basedirin,years_of_interest,ext,sw_years):
                 infiles_time_dy[ifile] = dy # store in a dictionary
                 ifile = ifile + 1 # increment this variable
 
-    return infiles
+    return infiles, infiles_time_yr, infiles_time_dy
